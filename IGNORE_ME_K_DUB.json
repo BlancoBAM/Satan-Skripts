@@ -1,0 +1,93 @@
+<script src="https://gist.github.com/seupedro/329e3983fd09f7c84aefba49f3e0c806.js"></script>
+document.write('<link rel="stylesheet"
+href="https://github.githubassets.com/assets/gist-embed-05ac2616078a.css">') document.write('<div
+id=\"gist104315201\" class=\"gist\">\n <div class=\"gist-file\" translate=\"no\" data-color-mode=\"light\"
+data-light-theme=\"light\">\n <div class=\"gist-data\">\n <div class=\"js-gist-file-update-container
+js-task-list-container\">\n <div id=\"file-emoji-on-ubuntu-md\" class=\"file my-2\">\n <div
+id=\"file-emoji-on-ubuntu-md-readme\" class=\"Box-body readme blob p-5 p-xl-6 \"\n style=\"overflow: auto\"
+tabindex=\"0\" role=\"region\"\n aria-label=\"Emoji-on-Ubuntu.md content, created by arafathusayn on 06:41AM on
+July 13, 2020.\"\n >\n <article class=\"markdown-body entry-content container-lg\" itemprop=\"text\"><div
+class=\"markdown-heading\" dir=\"auto\"><h2 class=\"heading-element\" dir=\"auto\">1. Install Fonts<\/h2><a
+id=\"user-content-1-install-fonts\" class=\"anchor\" aria-label=\"Permalink: 1. Install Fonts\"
+href=\"#1-install-fonts\"><svg class=\"octicon octicon-link\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\"
+height=\"16\" aria-hidden=\"true\"><path d=\"m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0
+1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0
+0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83
+0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5
+0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0
+0 0 2.83Z\"><\/path><\/svg><\/a><\/div>\n<p dir=\"auto\"><code>sudo apt install
+fonts-noto-color-emoji<\/code><\/p>\n<div class=\"markdown-heading\" dir=\"auto\"><h2 class=\"heading-element\"
+dir=\"auto\">2. Add Font Configuration<\/h2><a id=\"user-content-2-add-font-configuration\" class=\"anchor\"
+aria-label=\"Permalink: 2. Add Font Configuration\" href=\"#2-add-font-configuration\"><svg class=\"octicon
+octicon-link\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" height=\"16\" aria-hidden=\"true\"><path
+d=\"m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1
+.018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25
+1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751
+0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0
+.751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0
+2.83Z\"><\/path><\/svg><\/a><\/div>\n<ul dir=\"auto\">\n<li>Open
+<code>~/.config/fontconfig/conf.d/01-emoji.conf<\/code> file in an editor.<\/li>\n<li>Copy-paste the lines
+below:<\/li>\n<\/ul>\n<div class=\"highlight highlight-text-xml\" dir=\"auto\"><pre>&lt;?<span
+class=\"pl-ent\">xml<\/span><span class=\"pl-e\"> version<\/span>=<span class=\"pl-s\"><span
+class=\"pl-pds\">\"<\/span>1.0<span class=\"pl-pds\">\"<\/span><\/span><span class=\"pl-e\">
+encoding<\/span>=<span class=\"pl-s\"><span class=\"pl-pds\">\"<\/span>UTF-8<span
+class=\"pl-pds\">\"<\/span><\/span>?&gt;\n&lt;!<span class=\"pl-ent\">DOCTYPE<\/span> <span
+class=\"pl-e\">fontconfig<\/span> SYSTEM \"fonts.dtd\"&gt;\n&lt;<span class=\"pl-ent\">fontconfig<\/span>&gt;\n
+&lt;<span class=\"pl-ent\">alias<\/span>&gt;\n &lt;<span class=\"pl-ent\">family<\/span>&gt;serif&lt;/<span
+class=\"pl-ent\">family<\/span>&gt;\n &lt;<span class=\"pl-ent\">prefer<\/span>&gt;\n &lt;<span
+class=\"pl-ent\">family<\/span>&gt;Noto Color Emoji&lt;/<span class=\"pl-ent\">family<\/span>&gt;\n &lt;/<span
+class=\"pl-ent\">prefer<\/span>&gt;\n &lt;/<span class=\"pl-ent\">alias<\/span>&gt;\n &lt;<span
+class=\"pl-ent\">alias<\/span>&gt;\n &lt;<span class=\"pl-ent\">family<\/span>&gt;sans-serif&lt;/<span
+class=\"pl-ent\">family<\/span>&gt;\n &lt;<span class=\"pl-ent\">prefer<\/span>&gt;\n &lt;<span
+class=\"pl-ent\">family<\/span>&gt;Noto Color Emoji&lt;/<span class=\"pl-ent\">family<\/span>&gt;\n &lt;/<span
+class=\"pl-ent\">prefer<\/span>&gt;\n &lt;/<span class=\"pl-ent\">alias<\/span>&gt;\n &lt;<span
+class=\"pl-ent\">alias<\/span>&gt;\n &lt;<span class=\"pl-ent\">family<\/span>&gt;monospace&lt;/<span
+class=\"pl-ent\">family<\/span>&gt;\n &lt;<span class=\"pl-ent\">prefer<\/span>&gt;\n &lt;<span
+class=\"pl-ent\">family<\/span>&gt;Noto Color Emoji&lt;/<span class=\"pl-ent\">family<\/span>&gt;\n &lt;/<span
+class=\"pl-ent\">prefer<\/span>&gt;\n &lt;/<span class=\"pl-ent\">alias<\/span>&gt;\n&lt;/<span
+class=\"pl-ent\">fontconfig<\/span>&gt;<\/pre><\/div>\n<div class=\"markdown-heading\" dir=\"auto\"><h2
+class=\"heading-element\" dir=\"auto\">3. Flush Font Cache<\/h2><a id=\"user-content-3-flush-font-cache\"
+class=\"anchor\" aria-label=\"Permalink: 3. Flush Font Cache\" href=\"#3-flush-font-cache\"><svg class=\"octicon
+octicon-link\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" height=\"16\" aria-hidden=\"true\"><path
+d=\"m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1
+.018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25
+1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751
+0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0
+.751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0
+2.83Z\"><\/path><\/svg><\/a><\/div>\n<p dir=\"auto\"><code>fc-cache -f -v<\/code><\/p>\n<div
+class=\"markdown-heading\" dir=\"auto\"><h2 class=\"heading-element\" dir=\"auto\">4. Restart the programs (e.g.
+web browsers)<\/h2><a id=\"user-content-4-restart-the-programs-eg-web-browsers\" class=\"anchor\"
+aria-label=\"Permalink: 4. Restart the programs (e.g. web browsers)\"
+href=\"#4-restart-the-programs-eg-web-browsers\"><svg class=\"octicon octicon-link\" viewBox=\"0 0 16 16\"
+version=\"1.1\" width=\"16\" height=\"16\" aria-hidden=\"true\"><path d=\"m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1
+4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0
+2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69
+9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1
+1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0
+0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z\"><\/path><\/svg><\/a><\/div>\n<div class=\"markdown-heading\"
+dir=\"auto\"><h2 class=\"heading-element\" dir=\"auto\">5. Check<\/h2><a id=\"user-content-5-check\"
+class=\"anchor\" aria-label=\"Permalink: 5. Check\" href=\"#5-check\"><svg class=\"octicon octicon-link\"
+viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" height=\"16\" aria-hidden=\"true\"><path d=\"m7.775 3.275
+1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1
+1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0
+1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1
+1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0
+1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0
+2.83Z\"><\/path><\/svg><\/a><\/div>\n<ul dir=\"auto\">\n<li>Visit <a
+href=\"https://web.archive.org/web/20200908035914/https://eosrei.github.io/emojione-color-font/full-demo.html\"
+rel=\"nofollow\">this link<\/a> 🧐 to check the emoji list.<\/li>\n<\/ul>\n<div class=\"markdown-heading\"
+dir=\"auto\"><h2 class=\"heading-element\" dir=\"auto\">6. That\'s it! 🤗<\/h2><a
+id=\"user-content-6-thats-it-\" class=\"anchor\" aria-label=\"Permalink: 6. That\'s it! 🤗\"
+href=\"#6-thats-it-\"><svg class=\"octicon octicon-link\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\"
+height=\"16\" aria-hidden=\"true\"><path d=\"m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0
+1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0
+0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83
+0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5
+0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0
+0 0 2.83Z\"><\/path><\/svg><\/a><\/div>\n<\/article>\n <\/div>\n\n <\/div>\n<\/div>\n\n <\/div>\n <div
+class=\"gist-meta\">\n <a
+href=\"https://gist.github.com/arafathusayn/3d384adfbbdfe0b6a12868e9046e9a23/raw/075828c9f9ecc79cbd2a974f28ce27ecd6813246/Emoji-on-Ubuntu.md\"
+style=\"float:right\" class=\"Link--inTextBlock\">view raw<\/a>\n <a
+href=\"https://gist.github.com/arafathusayn/3d384adfbbdfe0b6a12868e9046e9a23#file-emoji-on-ubuntu-md\"
+class=\"Link--inTextBlock\">\n Emoji-on-Ubuntu.md\n <\/a>\n hosted with &#10084; by <a
+class=\"Link--inTextBlock\" href=\"https://github.com\">GitHub<\/a>\n <\/div>\n <\/div>\n<\/div>\n')
