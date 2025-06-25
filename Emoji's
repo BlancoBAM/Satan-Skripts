@@ -1,0 +1,45 @@
+#!/bin/bash
+
+##1. Install Fonts
+
+sudo apt install fonts-noto-color-emoji
+##2. Add Font Configuration
+
+   ## Open ~/.config/fontconfig/conf.d/01-emoji.conf file in an editor.
+    ##Copy-paste the lines below:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fontconfig SYSTEM "fonts.dtd">
+<fontconfig>
+  <alias>
+    <family>serif</family>
+    <prefer>
+      <family>Noto Color Emoji</family>
+    </prefer>
+  </alias>
+  <alias>
+    <family>sans-serif</family>
+    <prefer>
+      <family>Noto Color Emoji</family>
+    </prefer>
+  </alias>
+  <alias>
+    <family>monospace</family>
+    <prefer>
+      <family>Noto Color Emoji</family>
+    </prefer>
+  </alias>
+</fontconfig>
+
+##3. Flush Font Cache
+
+fc-cache -f -v
+###4. Restart the programs (e.g. web browsers)
+##5. Check
+
+  ##  Visit this link 🧐 to check the emoji list.
+
+###   https://web.archive.org/web/20200908035914/https://eosrei.github.io/emojione-color-font/full-demo.html
+
+
+### 6. That's it! 🤗
