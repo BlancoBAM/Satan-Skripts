@@ -1,0 +1,15 @@
+## Check out the main ones tailored just for you first... 
+  (cd Satan Skripts
+   cat ______.txt)
+   ## When you pick your fav, then type: 
+   nano config.txt
+   ### TAH-DAH!! 
+
+....BUT; Thats not all!
+###copy and paste the following lines seperately
+
+
+sudo bash ./install-icons.sh 
+
+
+git clone --depth 1 https://github.com/m3tozz/FastCat.git && cd FastCat && bash ./fastcat.sh --shell 
