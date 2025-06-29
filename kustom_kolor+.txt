@@ -1,0 +1,33 @@
+How to use
+
+    Put the widget on any of your panels
+    Go to the widget settings to change the current panel appearance (right click > Configure...)
+    Widget can set to only show in panel Edit Mode (right click > Hide widget or from the widget settings)
+
+Creating and managing presets
+
+Presets are a way to store the current configuration, it allows to quickly switch between styles and also to use them on other panels.
+
+How to manage presets
+
+    To start creating a new preset you can either load an existing preset you want to edit or start clean by restoring the default appearance first.
+    Go to the other tabs and configure them however you like.
+    Go back to presets tab and either update the existing preset or create a new one.
+
+When you apply a preset it overrides the currently applied configuration with the one of the preset, you can always save the current configuration as a different preset if you want to preserve it.
+
+After loading a preset and editing any of the settings the new changes are not automatically written to the last loaded preset, instead you should go back to the presets tab and update it.
+
+Preset auto-loading
+
+The same applies to the preset auto-loading feature, if you are making changes to your presets it is recommended to temporary disable this feature so your unsaved edits don't get overwritten when a preset auto-loads.
+Advanced commandline usage with D-Bus (version 2.0.0 or later)
+
+Each widget instance has its own D-bus name (e.g. luisbocanegra.panel.colorizer.c337.w2346), you can find it on each widget's General settings tab, you can also disable the service from there.
+Switching presets with D-Bus
+
+To apply a preset to a specific panel pass the absolute path of a preset folder:
+
+qdbus6 luisbocanegra.panel.colorizer.c337.w2346 /preset preset /path/to/preset/dir/
+
+It's also possible to apply the preset to all the panels at once
