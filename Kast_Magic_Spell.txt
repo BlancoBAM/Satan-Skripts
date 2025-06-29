@@ -1,0 +1,12 @@
+##Copy each line and paste it one by one into a new terminal tab/window. Dont run the next until the previous script has finished running 
+
+
+sudo apt install git build-essential cmake extra-cmake-modules libplasma-dev kde-spectacle python3 python3-dbus python3-gi
+
+git clone https://github.com/luisbocanegra/plasma-panel-colorizer
+
+cd plasma-panel-colorizer
+
+./install.sh
+
+./install-plugin.sh
